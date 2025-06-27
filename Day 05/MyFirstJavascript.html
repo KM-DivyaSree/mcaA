@@ -1,0 +1,71 @@
+<html>
+<head>
+<script>
+function add(){
+var num1,num2,sum;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sum=num1+num2;
+document.getElementById("txtAnswer").value=sum;
+}
+function sub(){
+var num1,num2,sub;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+sub=num1-num2;
+document.getElementById("txtAnswer").value=sub;
+}
+function mul(){
+var num1,num2,mul;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+mul=num1*num2;
+document.getElementById("txtAnswer").value=mul;
+}
+function divi(){
+var num1,num2,divi;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+divi=num1/num2;
+document.getElementById("txtAnswer").value=divi;
+}
+function mod(){
+var num1,num2,mod;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+mod=num1%num2;
+document.getElementById("txtAnswer").value=mod;
+}
+function ClearAll(){
+document.getElementById("txtFirstNumber").value="";
+document.getElementById("txtSecondNumber").value="";
+document.getElementById("txtAnswer").value="";
+}
+</script>
+</head>
+<body>
+<table border=5px align="center" bgcolor="lavender">
+<tr>
+<td align="center" colspan="3">First Number :</td>
+<td align="center" colspan="3"><input id="txtFirstNumber"></td>
+</tr>
+<tr>
+<td align="center" colspan="3">Second Number :</td>
+<td align="center" colspan="3"><input id="txtSecondNumber"></td>
+</tr>
+<tr>
+<td align="center"><button onclick="add()">+</button></td>
+<td align="center"><button onclick="sub()">-</button></td>
+<td align="center"><button onclick="mul()">*</button></td>
+<td align="center"><button onclick="divi()">/</button></td>
+<td align="center"><button onclick="mod()">%</button></td>
+</tr>
+<tr>
+<td colspan=5 align="center">result :<input id ="txtAnswer"></td>
+</tr>
+<tr>
+<td colspan=5 align="center"><button onclick="ClearAll()">ClearAll</button></td>
+</tr>
+</table>
+</body>
+</html>
